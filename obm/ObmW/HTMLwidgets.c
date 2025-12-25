@@ -3411,7 +3411,7 @@ MakeWidget(HTMLWidget hw, char *text, int x, int y, int id, FormInfo *fptr)
 				XtAddCallback(w, XtNdestroyCallback,
 					(XtCallbackProc)CBListDestroy, NULL);
 
-				XawListChange(w, (char **) string_list, list_cnt,
+				XawListChange(w, (const char **) string_list, list_cnt,
 					0, True);
 
 				if (vlist_cnt > 0)
